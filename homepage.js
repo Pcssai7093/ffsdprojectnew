@@ -12,10 +12,10 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementsByClassName("navover")[0].style="background-color:cornflowerblue; padding:20px 0;";
+    document.getElementsByClassName("navover")[0].style="background-color:cornflowerblue;";
 
   } else {
-    document.getElementsByClassName("navover")[0].style="background-color:white";
+    document.getElementsByClassName("navover")[0].style="background-color:black";
 
   }
 }

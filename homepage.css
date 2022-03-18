@@ -13,13 +13,13 @@ body .navover{
     width:100%;
     background-color:rgb(233, 237, 240);
     /* background-color: rgb(233, 223, 84); */
-    padding: 80px 10px; /* Large padding which will shrink on scroll (using JS) */
+    padding: 30px 10px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s;
   z-index: 1;
 }
 
 body .navover a{
-color:rgb(0, 0, 0);
+color:white;
 font-weight: 600;
 }
 /* *---------------------- */
@@ -88,14 +88,39 @@ body .card:hover{
 }
 
 /* *---------------------- */
+.search-container1{
+    
+    width:260px;
+    border: 2px solid black;
+    border-radius: 99px;
+    padding: 0 5px;
+    /* height: 42px; */
+}
+
+.search-container2{
+    border:none;
+    width:100%;
+}
+
+.search-bar{
+    border:none;
+}
+
+.search-bar:focus{
+    outline: none;
+}
+/* *---------------------- */
 
 .filters-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width:30%;
     width:350px;
     height:100%;
     text-align: center;
     border-right: 1px solid grey;
-    float:left;
+    /* float:left; */
      margin-top: 30px;
 }
 
