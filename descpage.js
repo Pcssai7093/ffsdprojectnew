@@ -36,3 +36,34 @@ for(let i=0;i<elem5.length;i++){
         elem5[i].classList.add('active');
         });
 }
+
+
+
+
+let maxwid=window.innerWidth;
+if(maxwid>1100){
+    console.log('hello');
+    window.onscroll = function() {
+    scrollFunction1();
+
+};
+}
+
+
+
+function scrollFunction1() {
+
+    let pos=document.getElementById('footer').offsetTop;
+    
+    if (document.body.scrollTop > pos-430|| document.documentElement.scrollTop > pos-430) {
+        document.getElementsByClassName("product-package")[0].style="top:auto;bottom:100px";
+    console.log("scrolled");
+    }
+    else    if (document.body.scrollTop > 150|| document.documentElement.scrollTop > 150) {
+        document.getElementsByClassName("product-package")[0].style="position:fixed";
+    // console.log("scrolled");
+    }
+   else {
+    document.getElementsByClassName("product-package")[0].style="position:absolute";
+  }
+}
