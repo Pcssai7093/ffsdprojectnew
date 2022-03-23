@@ -12,10 +12,21 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementsByClassName("navover")[0].style="background-color:cornflowerblue;";
+    // document.getElementById("nav-container").style="background-color:cornflowerblue;";
+    document.getElementById("nav-container").classList.add('active');
 
   } else {
-    document.getElementsByClassName("navover")[0].style="background-color:black";
+    // document.getElementById("nav-container").style="background-color:none";
+    document.getElementById("nav-container").classList.remove('active');
+
 
   }
 }
+
+
+let menu=document.getElementById('menu-icon');
+
+menu.addEventListener('click',function(){
+    document.getElementById('nav-container').classList.toggle('active1');
+    document.getElementById('nav-list').classList.toggle('active');
+});
