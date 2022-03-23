@@ -1,0 +1,28 @@
+*{
+    margin: 0 20px;
+}
+
+.pf-body{
+    /* width:600px; */
+}
+
+ .pf-body .card-header{ 
+     border-radius: 99px;
+ }
+
+ .pf-card{
+     display: flex;
+     justify-content: center;
+ }
+
+ body .pf-list{
+     display: flex;
+ }
+
+ @media screen and (max-width:1000px) {
+    .pf-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ }
